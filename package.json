@@ -1,0 +1,34 @@
+{
+  "name": "async-parallel",
+  "version": "1.0.0",
+  "description": "A zero-dependency async parallel task runner",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ksryy/async-parallel.git"
+  },
+  "keywords": [
+    "async",
+    "utils",
+    "module",
+    "serial",
+    "callback"
+  ],
+  "author": "Andy Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ksryy/async-parallel/issues"
+  },
+  "homepage": "https://github.com/ksryy/async-parallel#readme",
+  "devDependencies": {
+    "ava": "^1.4.1",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "nyc": "^14.1.1"
+  }
+}
