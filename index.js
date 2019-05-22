@@ -14,6 +14,6 @@
  */
 export default function parallel({ tasks, param }, cb) {
 	for (const task of tasks) {
-		Promise(task(param)).then(val => cb(null,val)).catch(e => cb(e))
+		new Promise(task(param)).then(val => cb(null,val)).catch(e => cb(e))
 	}
 }
