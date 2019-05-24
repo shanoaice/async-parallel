@@ -19,6 +19,7 @@ module.exports = {
 	"indent": [
 		"error",
 		"tab"
-	]
+	],
+	"arrow-parens": 0,
   },
 };

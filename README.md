@@ -1,4 +1,4 @@
-# async-parallel
+# parallel-async
 
 > A zero-dependency async parallel task runner. Powered by Promise.
 
@@ -7,16 +7,16 @@
 ## Install
 
 ``` bash
-npm install async-parallel
+npm install parallel-async
 ```
 
 Then import it use either CommonJS:
 ``` js
-const parallel = require('async-parallel');
+const parallel = require('parallel-async');
 ```
 or ESModule:
 ``` js
-import parallel from 'async-parallel'
+import parallel from 'parallel-async'
 ```
 
 ## Usage (more of a mixture of guideline and design idea)

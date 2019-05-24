@@ -1,7 +1,9 @@
 import test from 'ava'
 
-test.todo('Resolve all');
+test('Resolve all', t => {
+	t.pass();
+});
 
 test.todo('Reject all');
 
-test.todo('Mixed')
+test.todo('Mixed');
