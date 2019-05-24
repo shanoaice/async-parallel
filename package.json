@@ -1,6 +1,6 @@
 {
   "name": "parallel-async",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A zero-dependency async parallel task runner",
   "main": "index.js",
   "scripts": {

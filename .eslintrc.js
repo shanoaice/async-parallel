@@ -17,7 +17,8 @@ module.exports = {
 	"no-tabs": 0,
 	"no-empty": 1,
 	"indent": [
-		"tabs"
+		"error",
+		"tab"
 	]
   },
 };
