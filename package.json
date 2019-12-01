@@ -24,12 +24,12 @@
   },
   "homepage": "https://github.com/ksryy/async-parallel#readme",
   "devDependencies": {
-    "ava": "^1.4.1",
-    "coveralls": "^3.0.3",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.17.2",
-    "nyc": "^14.1.1"
+    "ava": "1.4.1",
+    "coveralls": "3.0.3",
+    "eslint": "5.16.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.17.2",
+    "nyc": "14.1.1"
   },
   "np": {
     "yarn": false
