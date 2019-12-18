@@ -50,7 +50,9 @@
     ]
   },
   "husky": {
-    "precommit": "lint-staged"
+    "hooks": {
+      "precommit": "lint-staged"
+    }
   },
   "xo": {
     "extends": [
