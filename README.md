@@ -1,5 +1,7 @@
 # parallel-async
 
+***Moved to `@ksryy/parallel-async` due to OTP misconfiguration (may move back in a few days)***
+
 > A zero-dependency async parallel task runner. Powered by Promise.
 
 *NOTE: This package is designed for both Webpack and Node.js usage, but if you are using a enviroment that does not support Promise (such as IE) you need to polyfill it by yourself.*
@@ -7,7 +9,7 @@
 ## Install
 
 ``` bash
-npm install parallel-async
+npm install @ksryy/parallel-async
 ```
 
 Then import it use either CommonJS:
@@ -35,6 +37,6 @@ functon eg(param) {
 ```
 The returned function is what actually run in the `Promise`.
 
-The recommended way to pass in the task list is to use an `Array`, but you can also use `Generator` or `Set` too.
+**The only way to pass in the task list is to use an `Array` now, because I no longer use `for...of` loops for better polyfillability**
 
-There is also something tricky about the callback function that you need to provide. The callback function will be called more than once. 
+There is also something tricky about the callback function that you need to provide. The callback function **won't** be called more than once now, but if an error occured, all results of previously runned tasks will be discarded, no matter they successed or not.
