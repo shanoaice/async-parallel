@@ -1,6 +1,6 @@
 {
   "name": "@ksryy/parallel-async",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A zero-dependency async parallel task runner",
   "module": "main.js",
   "main": "index.js",
