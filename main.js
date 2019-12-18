@@ -15,22 +15,25 @@ let result = [];
  * @param {cb} [cb] The callback. May be called more than once if you have more than one task.
  */
 export default function parallel({ tasks, param }, cb) {
-	const runResult = tasks.every(val => {
-		let success = true;
-		new Promise(val(param)).then(value => {
-			result.push(value);
-		}).catch(e => {
-			success = false;
-			Promise.resolve().then(() => {
-				cb(e);
-			});
-		});
-		return success;
-	});
-	if (runResult) {
-		Promise.resolve().then(() => {
-			cb(null, result);
-		});
-	}
-	result = [];
+  const runResult = tasks.every(val => {
+    let success = true;
+    new Promise(val(param))
+      .then(value => {
+        result.push(value);
+      })
+      .catch(error => {
+        success = false;
+        Promise.resolve().then(() => {
+          cb(error);
+        });
+      });
+    return success;
+  });
+  if (runResult) {
+    Promise.resolve().then(() => {
+      cb(null, result);
+    });
+  }
+
+  result = [];
 }
