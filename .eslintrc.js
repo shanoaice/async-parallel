@@ -20,6 +20,6 @@ module.exports = {
 		"error",
 		"tab"
 	],
-	"arrow-parens": 0,
+	"arrow-parens": 0
   },
 };
